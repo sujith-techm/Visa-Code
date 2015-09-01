@@ -7,7 +7,7 @@
 	</target>
 	
 	<target name="jar" depends="clean">
-	<war destfile="war/visaprocessinginformation.war">
+	<war destfile="jar/visaprocessinginformation.war">
 	<fileset dir="."/>
 	</war>
 	</target>
