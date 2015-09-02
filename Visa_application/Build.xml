@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
  
-<project name="visa" default="jar" >
+<project name="visa" default="war" >
  
 	<target name="clean">
-	<delete dir="jar" />
+	<delete dir="war" />
 	</target>
 	
-	<target name="jar" depends="clean">
-	<war destfile="jar/visaprocessinginformation.jar">
+	<target name="war" depends="clean">
+	<war destfile="war/visaprocessinginformation.war">
 	<fileset dir="."/>
 	</war>
 	</target>
