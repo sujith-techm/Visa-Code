@@ -3,11 +3,16 @@
 <project name="visa" default="jar" >
  
 	<target name="clean">
-	<delete dir="war" />
+	<delete dir="jar" />
 	</target>
 	
+	<target name="compile">
+	        <mkdir dir="build/classes"/>
+	        <javac srcdir="src" destdir="build/classes"/>
+	    </target>
+	
 	<target name="jar" depends="clean">
-	<war destfile="war/visaprocessinginformation.war">
+	<war destfile="jar/visaprocessinginformation.jar">
 	<fileset dir="."/>
 	</war>
 	</target>
