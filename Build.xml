@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
  
-<project name="visa" default="jar" >
+<project name="visa" default="war" >
  
 	<target name="clean">
 	<delete dir="war" />
@@ -11,7 +11,7 @@
 	        <javac includeantruntime="false" srcdir="src" destdir="build/classes"/>
 	    </target>-->
 	
-		<target name="jar" depends="clean">
+		<target name="war" depends="clean">
 	<war destfile="war/visaprocessinginformation.jar">
 	<fileset dir="."/>
 	</war>
