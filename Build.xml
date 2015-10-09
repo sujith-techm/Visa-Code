@@ -3,7 +3,7 @@
 <project name="visa" default="jar" >
  
 	<target name="clean">
-	<delete dir="jar" />
+	<delete dir="war" />
 	</target>
 	
 	<!--<target name="compile" depends="clean" >
